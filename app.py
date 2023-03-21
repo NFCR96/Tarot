@@ -25,5 +25,5 @@ if st.button("Draw a Card"):
     # Show the image of the card (you'll need to have the card images saved locally)
     st.image(f"tarot_cards/{card.lower().replace(' ', '_')}.jpg")
 
-This code creates a simple Tarot game in Streamlit that displays the name and image of a randomly drawn card from the Tarot deck each time the "Draw a Card" button is clicked. You'll need to have the Tarot card images saved locally in a folder called tarot_cards for the images to display properly.
+
 
