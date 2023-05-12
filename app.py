@@ -11,7 +11,7 @@ def cells_per_ml():
     return cells_per_ml
 
 # Ejemplo de uso
-result = cells_per_ml() <module>
+result = cells_per_ml() <module>:
 print(f"El número de células por mililitro es: {result}")
 
 
