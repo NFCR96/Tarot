@@ -1,6 +1,6 @@
 import streamlit as st
-
 st.sidebar.[Graficar]
+
 def cells_per_ml(cells_counted, dilution_factor):
     # Cálculo del número de células por mililitro
     cells_per_mm2 = cells_counted * 4  # Se cuentan las células en 4 cuadrantes
