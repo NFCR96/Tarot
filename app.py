@@ -1,5 +1,5 @@
-import stremlit as st
-st.sidebar.[element_name]
-
+with st.sidebar:
+    st.[element_name]
+    
 
 
