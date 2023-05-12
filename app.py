@@ -1,11 +1,22 @@
 import streamlit as st
 
-# Agregar una barra lateral
-options = ["Opción 1", "Opción 2", "Opción 3"]
-selected_option = st.sidebar.selectbox("Selecciona una opción", options)
+# Página 1
+def page1():
+    st.write("Este es el contenido de la página 1")
 
-# Agregar widgets a la página principal
-st.write(f"Has seleccionado: {selected_option}")
-st.write("Este es el contenido de la página principal")
+# Página 2
+def page2():
+    st.write("Este es el contenido de la página 2")
+
+# Configuración de la barra lateral
+pages = {
+    "Página 1": page1,
+    "Página 2": page2
+}
+selection = st.sidebar.radio("Ir a", list(pages.keys()))
+
+# Mostrar la página seleccionada
+pages[selection]()
+
 
 
