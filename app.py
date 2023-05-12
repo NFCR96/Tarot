@@ -10,8 +10,8 @@ def page2():
 
 # Configuración de la barra lateral
 pages = {
-    "Página 1": page1,
-    "Página 2": page2
+    "Contador de Celulas": page1,
+    "Graficador": page2
 }
 selection = st.sidebar.radio("Ir a", list(pages.keys()))
 
