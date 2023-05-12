@@ -1,1 +1,1 @@
-matplotlib.st
+matplotlib.st.pyplot
