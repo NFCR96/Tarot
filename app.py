@@ -1,5 +1,5 @@
 import streamlit as st
-import matplotlib.pyplot as plt
+import matplotlib.st.pyplot as plt
 import numpy as np
 
 # Página 1: Conteo de células
