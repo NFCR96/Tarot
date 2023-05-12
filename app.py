@@ -2,11 +2,11 @@ import streamlit as st
 
 # Página 1
 def page1():
-    st.write("Este es el contenido de la página 1")
+    st.write("Contador de celulas")
 
 # Página 2
 def page2():
-    st.write("Este es el contenido de la página 2")
+    st.write("Graficador de curva")
 
 # Configuración de la barra lateral
 pages = {
