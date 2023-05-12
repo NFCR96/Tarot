@@ -1,29 +1,17 @@
 import streamlit as st
-import random
-
-# Define the Tarot deck
-tarot_deck = ['The Fool', 'The Magician', 'The High Priestess', 'The Empress', 'The Emperor',
-              'The Hierophant', 'The Lovers', 'The Chariot', 'Strength', 'The Hermit', 'Wheel of Fortune',
-              'Justice', 'The Hanged Man', 'Death', 'Temperance', 'The Devil', 'The Tower', 'The Star',
-              'The Moon', 'The Sun', 'Judgment', 'The World']
-
-# Shuffle the Tarot deck
-random.shuffle(tarot_deck)
-
-# Set up the Streamlit app
-st.title("Tarot Game")
-st.write("Welcome to the Tarot game! Click the button below to draw a card from the deck.")
-
-# Create a button to draw a card
-if st.button("Draw a Card"):
-    # Draw a card from the top of the deck
-    card = tarot_deck.pop(0)
+def cells_per_ml():
+    # Introducción manual del número de células contadas y el factor de dilución
+    cells_counted = int(input("Introduce el número de células contadas por cuadrante: "))
+    dilution_factor = int(input("Introduce el factor de dilución de la muestra: "))
     
-    # Show the name of the card
-    st.write(f"You drew the {card} card!")
-    
-    # Show the image of the card (you'll need to have the card images saved locally)
-    st.image(f"tarot_cards/{card.lower().replace(' ', '_')}.jpg")
+    # Cálculo del número de células por mililitro
+    cells_per_mm2 = cells_counted * 4  # Se cuentan las células en 4 cuadrantes
+    cells_per_ml = cells_per_mm2 * 10**4 * dilution_factor
+    return cells_per_ml
+
+# Ejemplo de uso
+result = cells_per_ml()
+print(f"El número de células por mililitro es: {result}")import matplotlib.pyplot as plt
 
 
 
