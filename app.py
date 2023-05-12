@@ -9,9 +9,7 @@ def cells_per_ml():
     cells_per_ml = cells_per_mm2 * 10**4 * dilution_factor
     return cells_per_ml
 
-# Ejemplo de uso
-result = cells_per_ml()
-print(f"El número de células por mililitro es: {result}")import matplotlib.pyplot as plt
+
 
 
 
