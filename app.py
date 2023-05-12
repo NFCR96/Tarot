@@ -1,6 +1,8 @@
 import streamlit as st
-st.sidebar.[Graficar]
-
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
 def cells_per_ml(cells_counted, dilution_factor):
     # Cálculo del número de células por mililitro
     cells_per_mm2 = cells_counted * 4  # Se cuentan las células en 4 cuadrantes
